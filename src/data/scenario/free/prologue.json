@@ -1,0 +1,28 @@
+{
+  "sceneId": "prologue",
+  "title": "序章 はざまの図書館",
+  "nodes": [
+    { "id": "p010", "type": "chapter", "title": "序章", "subtitle": "はざまの図書館" },
+    { "id": "p020", "type": "bg", "value": "bg_black" },
+    { "id": "p030", "type": "text", "text": "——気がつくと、見知らぬ場所に立っていた。" },
+    { "id": "p040", "type": "text", "text": "（このメッセージは、画面をクリックするか Enter キーで先へ進みます。少し試してみてください。）" },
+    { "id": "p050", "type": "text", "text": "背表紙の見えない本棚が、どこまでも続いている。天井も、床の果ても見えない。" },
+    { "id": "p060", "type": "bg", "value": "bg_library" },
+    { "id": "p070", "type": "text", "text": "本棚の切れ間に、小さな貸出カウンターがあった。そこに、一人の人物が座っている。" },
+    { "id": "p080", "type": "text", "speaker": "案内人", "portrait": "guide_normal", "text": "いらっしゃい。ようこそ、はざまの図書館へ。" },
+    { "id": "p090", "type": "text", "speaker": "案内人", "portrait": "guide_normal", "text": "ここは、どの物語にも属さない場所。——世界のどこかで“落丁”した頁が、流れ着く図書館です。" },
+    { "id": "p100", "type": "choice", "prompt": "案内人に、どう応じる？", "options": [
+      { "label": "「落丁……？　ここはどこなんだ」", "goto": "p110" },
+      { "label": "黙って、辺りを見回す", "goto": "p120", "effects": { "setFlags": { "quiet_start": true } } }
+    ] },
+    { "id": "p110", "type": "text", "speaker": "案内人", "portrait": "guide_normal", "text": "落丁——本から抜け落ちた頁のこと。人も、出来事も、時には世界まるごと、綴じ損なわれることがある。ここは、その行き場のない頁が集まる場所です。", "next": "p130" },
+    { "id": "p120", "type": "text", "speaker": "案内人", "portrait": "guide_normal", "text": "落ち着いていますね。……ここは、本から抜け落ちた頁が流れ着く場所。慌てなくて大丈夫。悪いようにはしません。", "next": "p130" },
+    { "id": "p130", "type": "text", "text": "案内人は、一枚のカードを差し出した。", "effects": { "addItems": ["item_guidecard"] } },
+    { "id": "p140", "type": "text", "speaker": "案内人", "portrait": "guide_smile", "text": "あなたの利用者カードです。——手に入れたものは、画面右上の「FILE」でいつでも確認できます。手がかりや持ち物が、そこに溜まっていきます。" },
+    { "id": "p150", "type": "text", "speaker": "案内人", "portrait": "guide_normal", "text": "それから「LOG」で読んだ文を読み返せます。「AUTO」で自動送り、「SKIP」で既読を飛ばせる。——操作はそれだけ。難しいことはありません。" },
+    { "id": "p160", "type": "text", "speaker": "案内人", "portrait": "guide_smile", "text": "せっかくですから、二冊ほど“まだ綴じられていない本”をお見せしましょう。読み方——いえ、遊び方は、読みながら覚えられます。" },
+    { "id": "p170", "type": "text", "text": "案内人は本棚から、雨に濡れたような一冊を抜き取った。表紙に題は無い。ただ、ページの隙間から、かすかに雨の匂いがした。" },
+    { "id": "p180", "type": "text", "speaker": "案内人", "portrait": "guide_normal", "text": "一冊目。——ある雨の夜から、すべてが始まる物語です。" },
+    { "id": "p190", "type": "jump", "scene": "chapter1" }
+  ]
+}

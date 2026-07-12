@@ -1,0 +1,25 @@
+{
+  "sceneId": "epilogue",
+  "title": "終章 それぞれの本へ",
+  "nodes": [
+    { "id": "e010", "type": "chapter", "title": "終章", "subtitle": "それぞれの本へ" },
+    { "id": "e020", "type": "bg", "value": "bg_library" },
+    { "id": "e030", "type": "text", "text": "案内人は、二冊の本をカウンターに並べた。雨の匂いのする本と、線路の錆びた匂いのする本。" },
+    { "id": "e040", "type": "text", "speaker": "案内人", "portrait": "guide_normal", "text": "気づきましたか。——二つの物語は、まったく別の話。なのに、同じことを言っている。" },
+    { "id": "e050", "type": "text", "speaker": "案内人", "portrait": "guide_smile", "text": "世界と世界のあいだには、見えない“梯子”が架かっている。渡ってしまえば、もう戻れない。——そして、渡った者だけが知る景色がある。" },
+    { "id": "e060", "type": "text", "text": "案内人は、あなたの利用者カードにそっと目をやった。名前の欄は、まだ空白のままだ。" },
+    { "id": "e070", "type": "text", "speaker": "案内人", "portrait": "guide_normal", "text": "この図書館は、続きの頁を持っていません。ここにあるのは、あくまで“入り口”だけ。" },
+    { "id": "e080", "type": "text", "speaker": "案内人", "portrait": "guide_smile", "text": "続きが読みたくなったら——それぞれの本を、最後まで開いてみてください。" },
+    { "id": "e090", "type": "text", "text": "『ヤコブの梯子 ―停点調査記録―』", "effects": { "setFlags": { "showed_link1": true } } },
+    { "id": "e100", "type": "text", "text": "『消えた踏切 ―ある地方都市の記録―』" },
+    { "id": "e110", "type": "text", "speaker": "案内人", "portrait": "guide_normal", "text": "どちらも、この図書館と同じ“遊び方”です。手がかりを集め、謎を解き、そして——自分で、頁の綴じ方を選ぶ。" },
+    { "id": "e120", "type": "branch", "if": { "flag": "deduction_perfect", "gte": 2 }, "then": "e200", "else": "e130" },
+    { "id": "e130", "type": "text", "speaker": "案内人", "portrait": "guide_smile", "text": "今日はここまで。——よい読書を。またいつでも、この図書館へ。" },
+    { "id": "e140", "type": "text", "text": "案内人が本を閉じると、視界がゆっくりと白んでいった。" },
+    { "id": "e150", "type": "ending", "endingId": "end_reader" },
+    { "id": "e200", "type": "text", "speaker": "案内人", "portrait": "guide_normal", "text": "……あなた、二つの謎をどちらも、一度も間違えずに解きましたね。" },
+    { "id": "e210", "type": "text", "speaker": "案内人", "portrait": "guide_smile", "text": "珍しい。——あなたには、物語の“綴じ方”が視えているのかもしれない。ならば、あの二冊の結末も、きっと見届けられるでしょう。" },
+    { "id": "e220", "type": "text", "text": "案内人が本を閉じると、視界がゆっくりと白んでいった。——けれど、あなたの手には、まだ確かに頁の感触が残っている。" },
+    { "id": "e230", "type": "ending", "endingId": "end_curious" }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "sceneId": "chapter1",
+  "title": "第一頁 雨の物語",
+  "nodes": [
+    { "id": "a010", "type": "chapter", "title": "第一頁", "subtitle": "雨の物語" },
+    { "id": "a020", "type": "bg", "value": "bg_rain_conveni" },
+    { "id": "a030", "type": "text", "text": "ページをめくると、雨の匂いが強くなった。——2008年、9月の終わり。東京の、とあるコンビニの軒下。" },
+    { "id": "a040", "type": "text", "text": "一人の青年が、雨宿りをしている。掲示板で、のちに「梯子」と呼ばれることになる人物だ。" },
+    { "id": "a050", "type": "text", "speaker": "梯子", "portrait": "hashigo_normal", "text": "……雨、強いな。もう少し待つか。" },
+    { "id": "a060", "type": "text", "text": "気がつくと、隣に初老の紳士が立っていた。俳優のように整った顔立ちで、その表情には不思議な柔らかさがある。" },
+    { "id": "a070", "type": "text", "speaker": "紳士", "portrait": "okada_smile", "text": "雨が強いですね。台風が近づいているせいでしょうか。" },
+    { "id": "a080", "type": "text", "text": "ありふれた世間話。——のはずだった。だが紳士は、梯子が誰にも話していないはずの家族のことまで、なぜか知っていた。" },
+    { "id": "a090", "type": "text", "speaker": "案内人", "portrait": "guide_normal", "text": "（——ここで、案内です。物語には時々、あなたが選ぶ場面があります。どちらを選んでも読み進められます。気楽にどうぞ。）" },
+    { "id": "a100", "type": "choice", "prompt": "梯子は、紳士にどう応じる？", "options": [
+      { "label": "警戒して、口を閉ざす", "goto": "a110" },
+      { "label": "つい、身の上を話してしまう", "goto": "a120", "effects": { "setFlags": { "opened_heart": true } } }
+    ] },
+    { "id": "a110", "type": "text", "text": "梯子は当たり障りのない相槌を返した。それでも紳士の穏やかな声に、少しずつ気を許していく。", "next": "a130" },
+    { "id": "a120", "type": "text", "text": "なぜか、梯子はこの紳士に心を許した。両親を早くに亡くしたこと、妹と二人で生きてきたこと——気づけば、そこまで話していた。", "next": "a130" },
+    { "id": "a130", "type": "text", "text": "やがてタクシーが来た。乗り込む梯子の手に、紳士は小さなケースと、折り畳まれたメモを押し込んだ。", "effects": { "addKeywords": ["kw_memo"] } },
+    { "id": "a140", "type": "text", "speaker": "紳士", "portrait": "okada_smile", "text": "2009年1月2日、13時43分。ある女性と、必ず会いなさい。" },
+    { "id": "a150", "type": "text", "text": "ドアが閉まる。紳士の姿は、雨の中に消えた。——手のなかには、意味の分からない言葉が並ぶメモだけが残された。", "effects": { "addKeywords": ["kw_memo"] } },
+    { "id": "a160", "type": "bg", "value": "bg_black" },
+    { "id": "a170", "type": "text", "speaker": "案内人", "portrait": "guide_normal", "text": "……どうです。気になるでしょう。この“謎のメモ”が、物語のすべての鍵になります。" },
+    { "id": "a180", "type": "text", "speaker": "案内人", "portrait": "guide_smile", "text": "メモに書かれていたのは、こんな言葉。——「Qualeは物質へ干渉する」。「Jacob's Ladder は、人の手で開発された」。" },
+    { "id": "a190", "type": "text", "text": "「Quale（クオリア）」——それは、主観的な感覚のこと。心が、物理の世界に干渉する。", "effects": { "addKeywords": ["kw_quale"] } },
+    { "id": "a200", "type": "text", "text": "「Jacob's Ladder（ヤコブの梯子）」——本来は、天へ伸びる聖書の梯子。だがそれが“人の手で開発された”のなら、それは奇跡ではなく、技術だ。", "effects": { "addKeywords": ["kw_ladder"] } },
+    { "id": "a210", "type": "text", "speaker": "案内人", "portrait": "guide_normal", "text": "手がかりが三つ、揃いました。——では、遊び方の本番。集めた手がかりを組み合わせて、謎を“解読”してみましょう。" },
+    { "id": "a220", "type": "text", "speaker": "案内人", "portrait": "guide_smile", "text": "空欄をタップして、あてはまる手がかりを選ぶだけ。迷ったら「ヒント」も、右上の「FILE」も使ってかまいません。落丁本のことです、間違えても、何度でもやり直せます。" },
+    { "id": "a230", "type": "deduction", "deductionId": "d_ch1" },
+    { "id": "a240", "type": "bg", "value": "bg_library" },
+    { "id": "a250", "type": "text", "speaker": "案内人", "portrait": "guide_normal", "text": "お見事。——これが『ヤコブの梯子』という物語の入り口です。" },
+    { "id": "a260", "type": "text", "speaker": "案内人", "portrait": "guide_normal", "text": "この先、梯子は“世界が書き換わる”体験をします。死んだはずの両親が写る写真。姉が、妹に変わってしまう日。……続きは、その本の中に。" },
+    { "id": "a270", "type": "text", "speaker": "案内人", "portrait": "guide_smile", "text": "さて。もう一冊、まったく別の本があります。——けれど、どこか似た匂いのする物語です。" },
+    { "id": "a280", "type": "jump", "scene": "chapter2" }
+  ]
+}

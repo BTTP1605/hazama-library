@@ -1,0 +1,20 @@
+{
+  "stylePrefix": "Dark-toned Japanese occult mystery adventure game illustration, cinematic muted color palette with deep shadows and warm amber highlights, subtle film grain, serious and quietly enchanting mood, semi-realistic anime style, high detail",
+  "portraitSuffix": "standing three-quarter body portrait facing the viewer, arms relaxed, neutral pose, soft even studio lighting, isolated on a solid uniform pure green chroma-key background (#00FF00), no background objects, no text",
+  "backgroundSuffix": "wide establishing shot, no people, no text, atmospheric lighting, 16:9 composition",
+  "characters": [
+    {
+      "id": "guide",
+      "name": "案内人（図書館の司書）",
+      "base": "A calm androgynous young librarian of indeterminate age, neat dark shoulder-length hair, pale skin, serene enigmatic eyes, wearing a deep charcoal high-collared long cardigan over a white shirt, holding a small index card, warm but otherworldly and slightly unreal presence",
+      "expressions": [
+        { "file": "guide_normal", "desc": "calm serene neutral expression" },
+        { "file": "guide_smile", "desc": "gentle knowing half-smile, kind but mysterious" }
+      ]
+    }
+  ],
+  "backgrounds": [
+    { "file": "title_key", "prompt": "Surreal key visual of an endless in-between library at night, towering bookshelves receding into darkness with no visible ceiling or floor, two faint glowing floating books in the center — one dripping soft rain, the other emitting a distant blinking red railroad-crossing light, a faint golden ladder of light rising between them, dust motes in warm amber lamplight against deep shadow, quiet and enchanting" },
+    { "file": "bg_library", "prompt": "Interior of an endless liminal library, towering wooden bookshelves fading into black depth above and below, a small lamplit wooden lending counter in the foreground, floating dust motes, pools of warm amber light against deep blue-black shadow, unnaturally quiet, occult mystery atmosphere, no people" }
+  ]
+}

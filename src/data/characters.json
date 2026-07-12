@@ -1,0 +1,6 @@
+[
+  { "id": "guide", "name": "案内人", "color": "#c8b273" },
+  { "id": "hashigo", "name": "梯子", "color": "#d4a017" },
+  { "id": "okada", "name": "紳士", "color": "#8a8f98" },
+  { "id": "miyata", "name": "宮田", "color": "#7fa8d4" }
+]
