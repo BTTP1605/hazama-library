@@ -22,7 +22,7 @@ export const BGM_BY_BG: Record<string, string | null> = {
   bg_library: "bgm_library",
   bg_rain_conveni: "bgm_rain",
   bg_kyusen: "bgm_rain",
-  bg_fumikiri_kai: "bgm_tension",
+  bg_fumikiri_kai: "bgm_void",
 };
 
 const BGM_VOLUME = 0.35;
