@@ -358,7 +358,17 @@ button {
   letter-spacing: 0.25em;
   margin-bottom: 6px;
 }
-.deduction-view .ded-intro { color: var(--muted); font-size: 13px; margin-bottom: 26px; }
+.deduction-view .ded-intro { color: var(--muted); font-size: 13px; margin-bottom: 14px; }
+.deduction-view .ded-howto {
+  color: var(--accent);
+  font-size: 13px;
+  border: 1px solid var(--accent-dim);
+  border-radius: 0;
+  padding: 8px 14px;
+  margin-bottom: 24px;
+  max-width: 600px;
+  line-height: 1.7;
+}
 .ded-sentence {
   max-width: 640px;
   font-family: var(--font-serif);

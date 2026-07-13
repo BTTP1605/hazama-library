@@ -54,6 +54,7 @@ export default function DeductionView({ deductionId }: { deductionId: string }) 
 
       {phase === "input" && (
         <>
+          <div className="ded-howto">「？？？」の箇所をタップ（クリック）し、ふさわしい言葉を選択してください</div>
           <div className="ded-sentence">
             {ded.parts.map((p, i) => {
               if (p.t === "text") return <span key={i}>{p.v}</span>;
