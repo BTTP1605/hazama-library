@@ -173,11 +173,21 @@ export const useGameStore = create<GameStore>((set, get) => {
         case "jump":
           gotoScene(node.scene);
           return;
-        case "chapter":
+        case "chapter": {
           set({ nodeIndex: idx, chapterTitle: `${node.title} ${node.subtitle ?? ""}`.trim() });
           audio.playSe("se_chapter");
+          // 章カード表示中のBGMを、続く最初のbgノードに合わせる（タイトルBGMの持ち越し防止）。
+          for (let j = idx + 1; j < scene.nodes.length; j++) {
+            const nn = scene.nodes[j];
+            if (nn.type === "bg") {
+              audio.playBgm(BGM_BY_BG[nn.value] ?? null);
+              break;
+            }
+            if (nn.type === "chapter") break;
+          }
           saveGame("auto", makeSaveData());
           return;
+        }
         case "text": {
           if (node.effects) runEffects(node.effects);
           const backlog = [...get().backlog, { speaker: node.speaker ?? node.bbs?.handle, text: node.text }].slice(-200);
@@ -245,6 +255,10 @@ export const useGameStore = create<GameStore>((set, get) => {
         endingId: null,
         overlay: null,
         toasts: [],
+        autoMode: false,
+        skipMode: false,
+        pendingScene: null,
+        pendingSave: null,
         screen: "game",
       });
       processFrom(0);
