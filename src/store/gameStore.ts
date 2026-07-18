@@ -328,6 +328,9 @@ export const useGameStore = create<GameStore>((set, get) => {
         backlog: [],
         overlay: null,
         endingId: null,
+        // ロード時にAUTO/SKIPは必ず解除（前回セッションの高速送りが持ち越さないように）。
+        autoMode: false,
+        skipMode: false,
         screen: "game",
       });
       audio.playBgm(BGM_BY_BG[data.bg] ?? null);
@@ -335,7 +338,7 @@ export const useGameStore = create<GameStore>((set, get) => {
 
     backToTitle: () => {
       saveGame("auto", makeSaveData());
-      set({ screen: "title", overlay: null });
+      set({ screen: "title", overlay: null, autoMode: false, skipMode: false });
     },
 
     finishEnding: () => {
